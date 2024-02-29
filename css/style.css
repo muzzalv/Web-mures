@@ -573,7 +573,8 @@ color: #F7F7F8;
 
    .header-inicio { 
       height: 812px;
-      width: 100%;   
+      width: 100%; 
+      background-image: url(../resources/fondo\ comida\ elegante.jpg);  
   }
 
   
