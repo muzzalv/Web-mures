@@ -574,7 +574,7 @@ color: #F7F7F8;
    .header-inicio { 
       height: 812px;
       width: 100%; 
-      background-image: url(../resources/fondo\ comida\ elegante.jpg);  
+      
   }
 
   
@@ -622,6 +622,11 @@ font-size: 14px;
 
 
 }
+
+
+
+
+   
 
 
 
@@ -844,6 +849,92 @@ justify-content:space-evenly;
    
 
 }
+
+.contenedor-ubicacion{ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.contenedor-titulo-ubicacion{ 
+   margin-top: 570px;
+}
+
+.contenedor-titulo-ubicacion h1{ 
+   font-size: 32px ;
+
+}
+
+
+.contenedor-mapa iframe{ 
+   height: 370px;
+   width: 320px;
+
+}
+
+.contenedor-mapa{ 
+   margin-left: unset;
+   margin-top: 50px;
+   }
+
+
+#ubicacionMures{ 
+   flex-direction: column-reverse;
+  
+    
+   
+}
+
+
+.contenedor-direccion h2{
+   font-size: 24px;
+   width: 58%;
+   padding: 0px 8px;
+
+
+   
+   
+   
+
+}
+
+.contenedor-direccion i{ 
+   font-size: 24px;
+  
+}
+
+.pie-de-pagina{ 
+   margin-top: 600px;
+
+
+ }
+
+
+ #nuevasUbicaciones{ 
+  align-items: center;
+  margin-left: unset;
+  margin-top: 80px;
+  
+}
+
+#nuevasUbicaciones h3{ 
+   font-size: 16px;
+ 
+}
+
+#nuevasUbicaciones ul{
+  
+   margin-left: unset;
+   
+}
+
+
+#nuevasUbicaciones li{ 
+   font-size: 16px;
+ 
+}
+
+
 
 
   
