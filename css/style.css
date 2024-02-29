@@ -698,7 +698,7 @@ justify-content:space-evenly;
 .contenedor-principal-tu-lugar{ 
  
    height: 100%;
-   max-width: 100;
+ 
  
   
    
@@ -769,6 +769,41 @@ justify-content:space-evenly;
   
 
 }
+
+.contenedor-cocina{ 
+
+   height: 100%;
+ 
+  
+   
+   
+   
+}
+
+.contenedor-cocina h1{ 
+   font-size: 32px ;
+ 
+}
+
+#seccionMenu{ 
+   width: 300px;
+   height: fit-content;
+   
+   
+   
+}
+
+
+#seccionMenu ul{
+   grid-template-columns: 300px;
+   grid-template-rows: repeat(9, auto);
+   
+}
+
+
+#seccionMenu a{ 
+   font-size: 20px;
+  
 
   
   
