@@ -506,6 +506,8 @@ color: #F7F7F8;
    color: #F7F7F8;
 }
 
+
+
 .contenedor-reservas{ 
    height: 900px;
    display: flex;
@@ -930,6 +932,59 @@ justify-content:space-evenly;
    font-size: 16px;
  
 }
+
+
+.contenedor-reservas{ 
+   height: unset;
+   justify-content: center;
+  
+}
+
+
+
+
+.contenedor-reservas h1{ 
+   font-size: 32px ;
+   margin-top: 250px;
+   text-align: center;
+
+
+}
+
+
+#formularioReservas{ 
+   height: fit-content;
+   width: 340px;
+   margin-top: 50px;
+   margin-bottom: 100px;
+ 
+   
+
+}
+
+.entradas-formulario{ 
+   width: 200px;
+ 
+  
+}
+
+
+.seleccion-lugar{ 
+   width: 200px;
+ 
+}
+
+
+.btn-outline-light{
+   margin-top: 20px;
+   margin-bottom: 20px;
+  
+}
+
+
+
+
+
 
 
 
