@@ -854,10 +854,11 @@ justify-content:space-evenly;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   height: 100%;
 }
 
 .contenedor-titulo-ubicacion{ 
-   margin-top: 570px;
+   margin-top: 250px;
 }
 
 .contenedor-titulo-ubicacion h1{ 
@@ -903,17 +904,13 @@ justify-content:space-evenly;
   
 }
 
-.pie-de-pagina{ 
-   margin-top: 600px;
-
-
- }
 
 
  #nuevasUbicaciones{ 
   align-items: center;
   margin-left: unset;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   
 }
 
