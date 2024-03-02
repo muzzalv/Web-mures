@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family:'MONTSERRAT', sans-serif ;
+    font-style: italic;
   
    
     
@@ -24,6 +26,37 @@
     
     
 }
+
+.navbar-collapse{
+  
+   position: absolute;
+   top: 0;
+   right: 0;
+
+}
+
+.navbar-nav{
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.nav-link{ 
+   font-size: 16px;
+   font-weight: 400;
+   padding: 10px;
+   color: #F7F7F8;
+   
+}
+
+.nav-link:hover{
+   background-color: #F7F7F8;
+color: black;
+transition: 0.5s;
+
+}
+
+
+
 
 
 
@@ -76,11 +109,10 @@
 
 .menu-navegacion a { 
     text-decoration: none;
-font-family: 'inter', sans-serif ;
-font-size: 16px;
-font-weight: 400;
-padding: 10px;
-color: #F7F7F8;
+   font-size: 16px;
+   font-weight: 400;
+   padding: 10px;
+   color: #F7F7F8;
 }
 
 .menu-navegacion a:hover { 
@@ -580,13 +612,7 @@ color: #F7F7F8;
   }
 
   
-.logo{
 
- display: none;
-
-
-
-   }
 
 
  .menu-navegacion {  
