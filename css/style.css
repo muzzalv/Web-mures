@@ -573,6 +573,8 @@ color: #F7F7F8;
   }
 
 
+
+
  .navbar-collapse{
   position: unset;
    display: flex;
@@ -610,26 +612,6 @@ color: #F7F7F8;
    height: 50px;
   
 }
-
-
-
-
-
-  
-
-
-
-
-
-
-
-   
-
-
-
- 
-   
- 
   
 
 
@@ -704,7 +686,7 @@ justify-content:space-evenly;
 .contenedor-principal-tu-lugar h2{ 
    font-size: 30px;
    width: 90%;
-   margin-top: 250px;
+   margin-top: 100px;
    
    
 }
@@ -780,7 +762,7 @@ justify-content:space-evenly;
 
 .contenedor-cocina h1{ 
    font-size: 32px ;
-   margin-top: 240px;
+   margin-top: 100px;
  
 }
 
@@ -822,7 +804,7 @@ justify-content:space-evenly;
 
 .staff-titulos h1 { 
       font-size: 32px ;
-      margin-top: 250px; }
+      margin-top: 100px; }
 
       
  .staff-titulos h2{
@@ -855,7 +837,7 @@ justify-content:space-evenly;
 }
 
 .contenedor-titulo-ubicacion{ 
-   margin-top: 250px;
+   margin-top: 100px;
 }
 
 .contenedor-titulo-ubicacion h1{ 
@@ -940,7 +922,7 @@ justify-content:space-evenly;
 
 .contenedor-reservas h1{ 
    font-size: 32px ;
-   margin-top: 250px;
+   margin-top: 100px;
    text-align: center;
 
 
