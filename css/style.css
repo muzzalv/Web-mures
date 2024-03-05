@@ -210,7 +210,7 @@ justify-content:right;
     
 }
 
-.contenedor-principal-tu-lugar h2{ 
+.contenedor-principal-tu-lugar h1{ 
     font-size: 50px;
     text-shadow: 0px 0px 20px black;
     font-weight: 400;
@@ -683,7 +683,7 @@ justify-content:space-evenly;
 
 
 
-.contenedor-principal-tu-lugar h2{ 
+.contenedor-principal-tu-lugar h1{ 
    font-size: 30px;
    width: 90%;
    margin-top: 100px;
