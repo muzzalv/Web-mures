@@ -543,6 +543,7 @@ color: #F7F7F8;
    margin-bottom: 13px;
    width: 250px;
    height: 40px;
+   background-color: #F7F7F8;
   
   
 }
@@ -554,6 +555,8 @@ color: #F7F7F8;
    width: 250px;
    height: 45px;
    margin-top: 13px;
+   background-color: #F7F7F8;
+  
 }
 
 .btn-outline-light{
@@ -563,7 +566,7 @@ color: #F7F7F8;
 
 
 
-@media ( max-width: 576px){
+@media (max-width: 576px){
 
 
    .header-inicio { 
