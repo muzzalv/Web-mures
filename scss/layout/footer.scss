@@ -1,0 +1,20 @@
+
+.pie-de-pagina { 
+    height: 60px;
+    width: 100%;
+    background-color: $color-footer;
+    margin-bottom: 0%;
+    text-align: center;
+    ul{ 
+        color: $color-tipografias;
+        list-style: none;
+        display: flex;
+        justify-content:right;}
+    i{ 
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 20px;
+        color: $color-tipografias;} }
+ 
+
+ 

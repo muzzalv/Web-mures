@@ -1,0 +1,55 @@
+.contenedor-frase-titulo{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    h1{ 
+        font-size: 80px;
+        font-weight: 200;
+        text-align: center;
+        font-family:'MONTSERRAT', sans-serif ;
+        font-style: italic;
+        margin-top: 150px;
+        width: 100%;
+        text-shadow: 0px 0px 20px black;
+        color: $color-tipografias;}}
+
+.contenido-inicio{ 
+    text-align: center;
+    padding: 20px;
+    height: 900px;
+    background-image: url(../resources/fondo\ negro\ pagina\ web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .subtitulo{ 
+        font-size: $subtitulos-principales ;
+        font-weight: 200;
+        margin-top: 60px;
+        text-shadow: 0px 0px 20px black;
+        width: 100%;
+        text-align: center;
+        color: $color-tipografias;}}
+
+#bancoDescuentos{
+    .titulo-descuentos{
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 200px;
+        color: $color-tipografias;}
+    .link-beneficios{   
+        font-weight: 400;
+        color: $color-tipografias;
+        margin-top: 10px;}
+    .link-beneficios:hover{
+        background-color:  $color-tipografias;
+        color: black;
+        padding: 10px 10px;}
+    img{ 
+        width: 100px;
+        height: auto;
+        padding: 20px 10px;
+        object-fit: cover;}}
+

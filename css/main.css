@@ -1,17 +1,132 @@
-/* Error: Expected '.
- *   ,
- * 2 | @import './general/reset.scss;
- *   |                               ^
- *   '
- *   scss\app.scss 2:31  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected '.\a   \2577 \a 2 \2502  @import './general/reset.scss;\a   \2502                                ^\a   \2575 \a   scss\\app.scss 2:31  root stylesheet";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "MONTSERRAT", sans-serif;
+  font-style: italic;
 }
+
+.header-inicio {
+  height: 700px;
+  width: 100%;
+  background: linear-gradient(rgba(33, 35, 37, 0.8), rgba(33, 35, 37, 0.8)), url(../resources/fondo\ comida\ elegante.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-inicio .navbar-collapse {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header-inicio .navbar-nav {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.header-inicio .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  color: #F7F7F8;
+}
+.header-inicio .nav-link:hover {
+  background-color: #F7F7F8;
+  color: black;
+  transition: 0.5s;
+}
+.header-inicio .contenedor-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header-inicio .logo {
+  width: 150px;
+  height: 150px;
+}
+
+.pie-de-pagina {
+  height: 60px;
+  width: 100%;
+  background-color: #141318;
+  margin-bottom: 0%;
+  text-align: center;
+}
+.pie-de-pagina ul {
+  color: #F7F7F8;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+.pie-de-pagina i {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 20px;
+  color: #F7F7F8;
+}
+
+.contenedor-frase-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-frase-titulo h1 {
+  font-size: 80px;
+  font-weight: 200;
+  text-align: center;
+  font-family: "MONTSERRAT", sans-serif;
+  font-style: italic;
+  margin-top: 150px;
+  width: 100%;
+  text-shadow: 0px 0px 20px black;
+  color: #F7F7F8;
+}
+
+.contenido-inicio {
+  text-align: center;
+  padding: 20px;
+  height: 900px;
+  background-image: url(../resources/fondo\ negro\ pagina\ web.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-inicio .subtitulo {
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 60px;
+  text-shadow: 0px 0px 20px black;
+  width: 100%;
+  text-align: center;
+  color: #F7F7F8;
+}
+
+#bancoDescuentos .titulo-descuentos {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 200px;
+  color: #F7F7F8;
+}
+#bancoDescuentos .link-beneficios {
+  font-weight: 400;
+  color: #F7F7F8;
+  margin-top: 10px;
+}
+#bancoDescuentos .link-beneficios:hover {
+  background-color: #F7F7F8;
+  color: black;
+  padding: 10px 10px;
+}
+#bancoDescuentos img {
+  width: 100px;
+  height: auto;
+  padding: 20px 10px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
