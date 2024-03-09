@@ -18,11 +18,11 @@
         font-size: 16px;
         font-weight: 400;
         padding: 10px;
-        color: #F7F7F8;}
-    .nav-link:hover{
-        background-color: $color-tipografias;
-        color: black;
-        transition: 0.5s;}
+        color: #F7F7F8;
+        &:hover{
+            background-color: $color-tipografias;
+            color: black;
+            transition: 0.5s;}}
     .contenedor-logo{ 
         display: flex;
         justify-content: flex-start;

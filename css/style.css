@@ -89,7 +89,7 @@ transition: 0.5s;
     align-items: center;
 }
 
-.frase-de-titulo{ 
+.contenedor-frase-titulo h1{ 
     font-size: 80px;
 font-weight: 200;
 text-align: center;
@@ -464,6 +464,7 @@ color: #F7F7F8;
 .contenedor-mapa iframe{ 
     height: 400px;
     width: 600px;
+    margin-bottom: -6px;
 
 }
 
@@ -619,13 +620,13 @@ color: #F7F7F8;
 
   
 .contenedor-frase-titulo{ 
-   margin-top: 200px;
+   margin-top: 100px;
 }
 
-   .frase-de-titulo{ 
-      font-size: 50px;
-       width: 80%;
-       margin-top: 30px;
+.contenedor-frase-titulo h1{ 
+   font-size: 50px;
+   width: 80%;
+   margin-top: 30px;
   
  
   
