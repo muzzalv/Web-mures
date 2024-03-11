@@ -1,5 +1,4 @@
 
-
 .header-inicio { 
     height: 700px;
     width: 100%;
@@ -7,10 +6,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include media-querie-mobile(){
+        height: 812px;
+        width: 100%;}
     .navbar-collapse{
         position: absolute;
         top: 0;
-        right: 0;}
+        right: 0;
+    @include media-querie-mobile(){
+        position: unset;
+        display: flex;
+        justify-content: center;
+        text-align: center;}}
     .navbar-nav{
         margin-top: 10px;
         margin-right: 10px;}
@@ -22,7 +29,12 @@
         &:hover{
             background-color: $color-tipografias;
             color: black;
-            transition: 0.5s;}}
+            transition: 0.5s;}
+    @include media-querie-mobile(){
+        font-size: 20px;
+        &:active{
+            background-color: $color-tipografias;
+            color: black;}}}
     .contenedor-logo{ 
         display: flex;
         justify-content: flex-start;
@@ -32,30 +44,16 @@
         left: 0;}    
     .logo{ 
         width: 150px ;
-        height: 150px;}
-
-@include media-querie-mobile(){
-    .header-inicio { 
-        height: 812px;
-        width: 100%; 
-        .navbar-collapse{
-            position: unset;
-            display: flex;
-            justify-content: center;
-            text-align: center;} 
-        .nav-link{ 
-            font-size: 20px;
-            &:active{
-                background-color: $color-tipografias;
-                color: black;}}           
-        .logo{ 
-            width: 95px ;
-            height: auto;}
-        .navbar-toggler{
-            background-color: $color-tipografias;
-            margin-right: 20px;
-            width: 82px;
-            height: 50px;} } } }
+        height: 150px;
+    @include media-querie-mobile(){
+        width: 95px ;
+        height: auto;}}
+    @include media-querie-mobile(){
+    .navbar-toggler{
+        background-color: $color-tipografias;
+        margin-right: 20px;
+        width: 82px;
+        height: 50px;}} } 
 
 
 

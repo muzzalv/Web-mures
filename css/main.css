@@ -14,10 +14,24 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 576px) {
+  .header-inicio {
+    height: 812px;
+    width: 100%;
+  }
+}
 .header-inicio .navbar-collapse {
   position: absolute;
   top: 0;
   right: 0;
+}
+@media (max-width: 576px) {
+  .header-inicio .navbar-collapse {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .header-inicio .navbar-nav {
   margin-top: 10px;
@@ -34,6 +48,15 @@
   color: black;
   transition: 0.5s;
 }
+@media (max-width: 576px) {
+  .header-inicio .nav-link {
+    font-size: 20px;
+  }
+  .header-inicio .nav-link:active {
+    background-color: #F7F7F8;
+    color: black;
+  }
+}
 .header-inicio .contenedor-logo {
   display: flex;
   justify-content: flex-start;
@@ -47,28 +70,13 @@
   height: 150px;
 }
 @media (max-width: 576px) {
-  .header-inicio .header-inicio {
-    height: 812px;
-    width: 100%;
-  }
-  .header-inicio .header-inicio .navbar-collapse {
-    position: unset;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .header-inicio .header-inicio .nav-link {
-    font-size: 20px;
-  }
-  .header-inicio .header-inicio .nav-link:active {
-    background-color: #F7F7F8;
-    color: black;
-  }
-  .header-inicio .header-inicio .logo {
+  .header-inicio .logo {
     width: 95px;
     height: auto;
   }
-  .header-inicio .header-inicio .navbar-toggler {
+}
+@media (max-width: 576px) {
+  .header-inicio .navbar-toggler {
     background-color: #F7F7F8;
     margin-right: 20px;
     width: 82px;
@@ -89,11 +97,21 @@
   display: flex;
   justify-content: right;
 }
+@media (max-width: 576px) {
+  .pie-de-pagina ul {
+    justify-content: space-evenly;
+  }
+}
 .pie-de-pagina i {
   font-size: 20px;
   text-align: center;
   margin: 20px 20px;
   color: #F7F7F8;
+}
+@media (max-width: 576px) {
+  .pie-de-pagina .contenedor-redes {
+    margin-left: -40px;
+  }
 }
 
 .cuerpo {
@@ -109,6 +127,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .contenedor-frase-titulo {
+    margin-top: 100px;
+  }
+}
 .contenedor-frase-titulo h1 {
   font-size: 80px;
   font-weight: 200;
@@ -119,6 +142,13 @@
   width: 100%;
   text-shadow: 0px 0px 20px black;
   color: #F7F7F8;
+}
+@media (max-width: 576px) {
+  .contenedor-frase-titulo h1 {
+    font-size: 50px;
+    width: 80%;
+    margin-top: 30px;
+  }
 }
 
 .contenido-inicio {
@@ -142,12 +172,28 @@
   text-align: center;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenido-inicio .subtitulo {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+}
 
 #bancoDescuentos .titulo-descuentos {
   font-size: 24px;
   font-weight: 400;
   margin-top: 200px;
   color: #F7F7F8;
+}
+@media (max-width: 576px) {
+  #bancoDescuentos .titulo-descuentos {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  #bancoDescuentos .contenedor-link-beneficios {
+    margin-top: 10px;
+  }
 }
 #bancoDescuentos .link-beneficios {
   font-weight: 400;
@@ -165,12 +211,22 @@
   padding: 20px 10px;
   object-fit: cover;
 }
+@media (max-width: 576px) {
+  #bancoDescuentos img {
+    padding: 10px 10px;
+  }
+}
 
 .contenedor-principal-tu-lugar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar {
+    height: 100%;
+  }
 }
 .contenedor-principal-tu-lugar h1 {
   font-size: 50px;
@@ -180,11 +236,26 @@
   text-align: center;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar h1 {
+    font-size: 30px;
+    width: 90%;
+    margin-top: 100px;
+  }
+}
 .contenedor-principal-tu-lugar #descripcionRestaurant {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 80px;
+}
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar #descripcionRestaurant {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
 }
 .contenedor-principal-tu-lugar #descripcionRestaurant p {
   font-size: 20px;
@@ -196,16 +267,38 @@
   margin: 30px 10px 0px 0px;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar #descripcionRestaurant p {
+    font-size: 14px;
+    width: 100%;
+    margin: 0px;
+    padding: 40px;
+  }
+}
 .contenedor-principal-tu-lugar #descripcionRestaurant img {
   width: 300px;
   height: auto;
   border: 1px solid #F7F7F8;
+}
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar #descripcionRestaurant img {
+    width: 230px;
+    margin-top: 40px;
+  }
 }
 .contenedor-principal-tu-lugar #espaciosRestaurant {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   margin-left: 50px;
+}
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar #espaciosRestaurant {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: unset;
+  }
 }
 .contenedor-principal-tu-lugar #espaciosRestaurant p {
   font-size: 20px;
@@ -217,10 +310,25 @@
   margin: 30px 0px 0px 10px;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar #espaciosRestaurant p {
+    font-size: 14px;
+    width: 100%;
+    height: 230px;
+    margin: 0px;
+    padding: 40px;
+  }
+}
 .contenedor-principal-tu-lugar #espaciosRestaurant img {
   width: 300px;
   height: auto;
   border: 1px solid #F7F7F8;
+}
+@media (max-width: 576px) {
+  .contenedor-principal-tu-lugar #espaciosRestaurant img {
+    width: 230px;
+    height: auto;
+  }
 }
 
 .contenedor-cocina {
@@ -230,11 +338,22 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .contenedor-cocina {
+    height: 100%;
+  }
+}
 .contenedor-cocina h1 {
   font-size: 50px;
   text-shadow: 0px 0px 20px black;
   font-weight: 400;
   color: #F7F7F8;
+}
+@media (max-width: 576px) {
+  .contenedor-cocina h1 {
+    font-size: 32px;
+    margin-top: 100px;
+  }
 }
 .contenedor-cocina #seccionMenu {
   width: 1200px;
@@ -246,11 +365,27 @@
   background-position-y: -340px;
   margin-top: 100px;
 }
+@media (max-width: 576px) {
+  .contenedor-cocina #seccionMenu {
+    width: 300px;
+    height: fit-content;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding-top: 10px;
+  }
+}
 .contenedor-cocina #seccionMenu ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 133px 133px 133px;
+}
+@media (max-width: 576px) {
+  .contenedor-cocina #seccionMenu ul {
+    grid-template-columns: 296px;
+    grid-template-rows: repeat(9, auto);
+    padding: 0px;
+  }
 }
 .contenedor-cocina #seccionMenu li {
   padding: 20px 10px;
@@ -258,6 +393,11 @@
   justify-content: center;
   align-items: center;
   margin-right: 50px;
+}
+@media (max-width: 576px) {
+  .contenedor-cocina #seccionMenu li {
+    margin-right: unset;
+  }
 }
 .contenedor-cocina #seccionMenu a {
   text-decoration: none;
@@ -271,6 +411,11 @@
   background-color: #F7F7F8;
   color: black;
   padding: 10px 10px;
+}
+@media (max-width: 576px) {
+  .contenedor-cocina #seccionMenu a {
+    font-size: 20px;
+  }
 }
 
 .contenedor-staff {
