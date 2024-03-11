@@ -581,6 +581,7 @@
 .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
   height: 400px;
   width: 600px;
+  margin-bottom: -7px;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
