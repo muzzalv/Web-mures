@@ -20,44 +20,48 @@
     width: 100%;
   }
 }
-.header-inicio .navbar-collapse {
+
+.navbar-collapse {
   position: absolute;
   top: 0;
   right: 0;
 }
 @media (max-width: 576px) {
-  .header-inicio .navbar-collapse {
+  .navbar-collapse {
     position: unset;
     display: flex;
     justify-content: center;
     text-align: center;
   }
 }
-.header-inicio .navbar-nav {
+
+.navbar-nav {
   margin-top: 10px;
   margin-right: 10px;
 }
-.header-inicio .nav-link {
+
+.nav-link {
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
   color: #F7F7F8;
 }
-.header-inicio .nav-link:hover {
+.nav-link:hover {
   background-color: #F7F7F8;
   color: black;
   transition: 0.5s;
 }
 @media (max-width: 576px) {
-  .header-inicio .nav-link {
+  .nav-link {
     font-size: 20px;
   }
-  .header-inicio .nav-link:active {
+  .nav-link:active {
     background-color: #F7F7F8;
     color: black;
   }
 }
-.header-inicio .contenedor-logo {
+
+.contenedor-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -65,25 +69,26 @@
   top: 0;
   left: 0;
 }
-.header-inicio .logo {
+
+.logo {
   width: 150px;
   height: 150px;
 }
 @media (max-width: 576px) {
-  .header-inicio .logo {
+  .logo {
     width: 95px;
     height: auto;
   }
 }
+
 @media (max-width: 576px) {
-  .header-inicio .navbar-toggler {
+  .navbar-toggler {
     background-color: #F7F7F8;
     margin-right: 20px;
     width: 82px;
     height: 50px;
   }
 }
-
 .pie-de-pagina {
   height: 60px;
   width: 100%;
@@ -424,6 +429,11 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 576px) {
+  .contenedor-staff {
+    height: 100%;
+  }
+}
 .contenedor-staff .staff-titulos {
   display: flex;
   flex-direction: column;
@@ -436,6 +446,12 @@
   font-weight: 400;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-staff .staff-titulos h1 {
+    font-size: 32px;
+    margin-top: 100px;
+  }
+}
 .contenedor-staff .staff-titulos h2 {
   font-size: 32px;
   font-weight: 200;
@@ -446,11 +462,22 @@
   width: 100%;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-staff .staff-titulos {
+    font-size: 20px;
+  }
+}
 .contenedor-staff #seccionStaff {
   display: flex;
   justify-content: flex-start;
   margin-left: 80px;
   margin-top: 70px;
+}
+@media (max-width: 576px) {
+  .contenedor-staff #seccionStaff {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
 }
 .contenedor-staff #seccionStaff li {
   font-size: 20px;
@@ -458,14 +485,33 @@
   padding: 15px;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-staff #seccionStaff li {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
 
 .contenedor-ubicacion {
   height: 800px;
+}
+@media (max-width: 576px) {
+  .contenedor-ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
 }
 .contenedor-ubicacion .contenedor-titulo-ubicacion {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .contenedor-ubicacion .contenedor-titulo-ubicacion {
+    margin-top: 100px;
+  }
 }
 .contenedor-ubicacion .contenedor-titulo-ubicacion h1 {
   font-size: 50px;
@@ -474,11 +520,21 @@
   text-align: center;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-ubicacion .contenedor-titulo-ubicacion h1 {
+    font-size: 32px;
+  }
+}
 .contenedor-ubicacion #ubicacionMures {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 576px) {
+  .contenedor-ubicacion #ubicacionMures {
+    flex-direction: column-reverse;
+  }
 }
 .contenedor-ubicacion #ubicacionMures .contenedor-direccion {
   display: flex;
@@ -494,19 +550,43 @@
   font-weight: 400;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-ubicacion #ubicacionMures .contenedor-direccion h2 {
+    font-size: 24px;
+    width: 58%;
+    padding: 0px 8px;
+  }
+}
 .contenedor-ubicacion #ubicacionMures .contenedor-direccion i {
   font-size: 30px;
   padding: 10px;
   color: #F7F7F8;
+}
+@media (max-width: 576px) {
+  .contenedor-ubicacion #ubicacionMures .contenedor-direccion i {
+    font-size: 24px;
+  }
 }
 .contenedor-ubicacion #ubicacionMures .contenedor-mapa {
   border: 8px solid #F7F7F8;
   margin-left: 50px;
   margin-top: 100px;
 }
+@media (max-width: 576px) {
+  .contenedor-ubicacion #ubicacionMures .contenedor-mapa {
+    margin-left: unset;
+    margin-top: 50px;
+  }
+}
 .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
   height: 400px;
   width: 600px;
+}
+@media (max-width: 576px) {
+  .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
+    height: 370px;
+    width: 320px;
+  }
 }
 .contenedor-ubicacion #nuevasUbicaciones {
   display: flex;
@@ -514,17 +594,35 @@
   align-items: flex-start;
   margin-left: 20px;
 }
+@media (max-width: 576px) {
+  .contenedor-ubicacion #nuevasUbicaciones {
+    align-items: center;
+    margin-left: unset;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
 .contenedor-ubicacion #nuevasUbicaciones h3 {
   font-size: 25px;
   font-weight: 400;
   padding: 10px 5px;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-ubicacion #nuevasUbicaciones h3 {
+    font-size: 16px;
+  }
+}
 .contenedor-ubicacion #nuevasUbicaciones ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
+}
+@media (max-width: 576px) {
+  .contenedor-ubicacion #nuevasUbicaciones ul {
+    margin-left: unset;
+  }
 }
 .contenedor-ubicacion #nuevasUbicaciones li {
   font-size: 20px;
@@ -533,6 +631,11 @@
   margin-top: 15px;
   color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-ubicacion #nuevasUbicaciones li {
+    font-size: 16px;
+  }
+}
 
 .contenedor-reservas {
   height: 900px;
@@ -540,12 +643,25 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .contenedor-reservas {
+    height: unset;
+    justify-content: center;
+  }
+}
 .contenedor-reservas h1 {
   font-size: 50px;
   text-shadow: 0px 0px 20px black;
   font-weight: 400;
   margin-top: 50px;
   color: #F7F7F8;
+}
+@media (max-width: 576px) {
+  .contenedor-reservas h1 {
+    font-size: 32px;
+    margin-top: 100px;
+    text-align: center;
+  }
 }
 .contenedor-reservas #formularioReservas {
   height: 520px;
@@ -555,6 +671,14 @@
   justify-content: center;
   border: 1px solid #F7F7F8;
   margin-top: 100px;
+}
+@media (max-width: 576px) {
+  .contenedor-reservas #formularioReservas {
+    height: fit-content;
+    width: 340px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
 }
 .contenedor-reservas #formularioReservas form {
   display: flex;
@@ -570,6 +694,11 @@
   height: 40px;
   background-color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-reservas #formularioReservas .entradas-formulario {
+    width: 200px;
+  }
+}
 .contenedor-reservas #formularioReservas .seleccion-lugar {
   padding: 10px;
   width: 250px;
@@ -577,8 +706,19 @@
   margin-top: 13px;
   background-color: #F7F7F8;
 }
+@media (max-width: 576px) {
+  .contenedor-reservas #formularioReservas .seleccion-lugar {
+    width: 200px;
+  }
+}
 .contenedor-reservas #formularioReservas .btn-outline-light {
   margin-top: 20px;
+}
+@media (max-width: 576px) {
+  .contenedor-reservas #formularioReservas .btn-outline-light {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,8 +8,8 @@
     background-position: center;
     @include media-querie-mobile(){
         height: 812px;
-        width: 100%;}
-    .navbar-collapse{
+        width: 100%;}}
+.navbar-collapse{
         position: absolute;
         top: 0;
         right: 0;
@@ -18,42 +18,42 @@
         display: flex;
         justify-content: center;
         text-align: center;}}
-    .navbar-nav{
+.navbar-nav{
         margin-top: 10px;
         margin-right: 10px;}
-    .nav-link{ 
+.nav-link{ 
         font-size: 16px;
         font-weight: 400;
         padding: 10px;
         color: #F7F7F8;
-        &:hover{
+    &:hover{
             background-color: $color-tipografias;
             color: black;
             transition: 0.5s;}
     @include media-querie-mobile(){
         font-size: 20px;
-        &:active{
+    &:active{
             background-color: $color-tipografias;
             color: black;}}}
-    .contenedor-logo{ 
+.contenedor-logo{ 
         display: flex;
         justify-content: flex-start;
         align-items: center;
         position: relative;
         top: 0;
         left: 0;}    
-    .logo{ 
+.logo{ 
         width: 150px ;
         height: 150px;
     @include media-querie-mobile(){
         width: 95px ;
         height: auto;}}
     @include media-querie-mobile(){
-    .navbar-toggler{
+      .navbar-toggler{
         background-color: $color-tipografias;
         margin-right: 20px;
         width: 82px;
-        height: 50px;}} } 
+        height: 50px;}}
 
 
 
