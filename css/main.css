@@ -189,35 +189,38 @@
   font-weight: 400;
   margin-top: 200px;
   color: #F7F7F8;
+  padding-bottom: 20px;
 }
 @media (max-width: 576px) {
   #bancoDescuentos .titulo-descuentos {
     font-size: 20px;
   }
 }
-@media (max-width: 576px) {
-  #bancoDescuentos .contenedor-link-beneficios {
-    margin-top: 10px;
-  }
+#bancoDescuentos .contenedor-link-beneficios {
+  padding-top: 20px;
 }
 #bancoDescuentos .link-beneficios {
   font-weight: 400;
   color: #F7F7F8;
-  margin-top: 10px;
 }
 #bancoDescuentos .link-beneficios:hover {
   background-color: #F7F7F8;
   color: black;
   padding: 10px 10px;
 }
-#bancoDescuentos img {
+#bancoDescuentos .contenedor-imagenes {
+  background: linear-gradient(90deg, rgba(20, 19, 24, 0.8604691877) 0%, rgba(20, 19, 24, 0.8576680672) 100%);
+  width: auto;
+  border-radius: 5px;
+}
+#bancoDescuentos .contenedor-imagenes img {
   width: 100px;
   height: auto;
   padding: 20px 10px;
   object-fit: cover;
 }
 @media (max-width: 576px) {
-  #bancoDescuentos img {
+  #bancoDescuentos .contenedor-imagenes img {
     padding: 10px 10px;
   }
 }
@@ -581,7 +584,6 @@
 .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
   height: 400px;
   width: 600px;
-  margin-bottom: -7px;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
