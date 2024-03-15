@@ -139,7 +139,7 @@
 }
 .contenedor-frase-titulo h1 {
   font-size: 80px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: center;
   font-family: "MONTSERRAT", sans-serif;
   font-style: italic;
@@ -147,6 +147,11 @@
   width: 100%;
   text-shadow: 0px 0px 20px black;
   color: #F7F7F8;
+  animation-name: animacionTitulo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
 }
 @media (max-width: 576px) {
   .contenedor-frase-titulo h1 {
@@ -225,6 +230,23 @@
   }
 }
 
+@keyframes animacionTitulo {
+  0% {
+    color: #ffffff;
+  }
+  25% {
+    color: #FDB9FC;
+  }
+  50% {
+    color: #F806CC;
+  }
+  75% {
+    color: #6F61C0;
+  }
+  100% {
+    color: #FF204E;
+  }
+}
 .contenedor-principal-tu-lugar {
   display: flex;
   flex-direction: column;
