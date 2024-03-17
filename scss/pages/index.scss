@@ -1,15 +1,11 @@
 .contenedor-frase-titulo{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, center, center);
     @include media-querie-mobile(){
         margin-top: 100px;}  
     h1{ 
         font-size: 80px;
         font-weight: 400;
         text-align: center;
-        font-family:'MONTSERRAT', sans-serif ;
-        font-style: italic;
         margin-top: 150px;
         width: 100%;
         text-shadow: 0px 0px 20px black;
@@ -22,9 +18,7 @@
         @include media-querie-mobile(){
             font-size: 50px;
             width: 80%;
-            margin-top: 30px;}}
-        }
-
+            margin-top: 30px;}}}
 .contenido-inicio{ 
     text-align: center;
     padding: 20px;
@@ -32,10 +26,7 @@
     background-image: url(../resources/fondo\ negro\ pagina\ web.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, center, center);
     .subtitulo{ 
         font-size: $titulos-principales ;
         font-weight: 200;
@@ -47,7 +38,6 @@
         @include media-querie-mobile(){
            font-size: 30px ;
            margin-top: 60px;}}}
-
 #bancoDescuentos{
     .titulo-descuentos{
         font-size: 24px;
@@ -77,7 +67,6 @@
             object-fit: cover;
             @include media-querie-mobile(){
                 padding: 10px 10px }}}}
-
 @keyframes animacionTitulo {
     0%{
         color: #D0E3CC; }

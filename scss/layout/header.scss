@@ -36,10 +36,8 @@
     &:active{
             background-color: $color-tipografias;
             color: black;}}}
-.contenedor-logo{ 
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+.contenedor-logo{
+        @include flexbox(column, center, flex-start);
         position: relative;
         top: 0;
         left: 0;}    

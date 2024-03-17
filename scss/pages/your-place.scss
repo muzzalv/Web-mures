@@ -1,9 +1,7 @@
 
-.contenedor-principal-tu-lugar{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contenedor-principal-tu-lugar{
+    @include flexbox(column, center, center);
+    height: 900px; 
     @include media-querie-mobile(){
         height: 100%;}
     h1{ 
@@ -13,19 +11,17 @@
         width: 80%;
         text-align: center;
         color: $color-tipografias;
+        margin-bottom: 100px;
         @include media-querie-mobile(){
             font-size: 30px;
             width: 90%;
-            margin-top: 100px;}} 
+            margin-top: 100px;
+            margin-bottom: unset;}} 
     #descripcionRestaurant{ 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 80px;
+        @include flexbox(row, center, center);
+        margin-top: 50px;
         @include media-querie-mobile(){
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(column-reverse, center, center);
             margin-top: 25px ;}
         p{
             font-size: 20px;
@@ -47,17 +43,12 @@
             border: 1px solid $color-tipografias;
             @include media-querie-mobile(){
                 width: 230px; 
-                margin-top: 40px;}}}
-            
+                margin-top: 40px;}}}     
     #espaciosRestaurant{ 
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
+        @include flexbox(row-reverse, center, center);
         margin-left: 50px;
         @include media-querie-mobile(){
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(column-reverse, center, center);
             margin-left: unset;}
         p{ 
             font-size: 20px;

@@ -1,14 +1,10 @@
 .contenedor-ubicacion{ 
-    height: 800px;
+    height: 900px;
     @include media-querie-mobile(){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexbox(column, center, center);
         height: 100%;}
     .contenedor-titulo-ubicacion{ 
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
+        margin-top: 20px;
         @include media-querie-mobile(){
             margin-top: 100px;}
         h1{ 
@@ -20,17 +16,11 @@
             @include media-querie-mobile(){
                 font-size: 32px ;}}}
     #ubicacionMures{ 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(row, center, center);
         @include media-querie-mobile(){
             flex-direction: column-reverse;}
-        .contenedor-direccion{ 
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        .contenedor-direccion{
+            @include flexbox(row, center, center);
             padding: 10px;
             margin-top: 50px;
             h2{
@@ -58,14 +48,14 @@
             iframe{ 
                 height: 400px;
                 width: 600px;
+                margin-bottom: -6px;
                 @include media-querie-mobile(){
                     height: 370px;
                     width: 320px;}}}} 
-    #nuevasUbicaciones{ 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 20px;
+    #nuevasUbicaciones{
+        @include flexbox(column, flex-start, center); 
+        margin-left: 40px;
+        margin-top: 50px;
         @include media-querie-mobile(){
             align-items: center;
             margin-left: unset;
@@ -78,13 +68,6 @@
             color: $color-tipografias;
             @include media-querie-mobile(){
                 font-size: 16px;}}
-        ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 20px;
-            @include media-querie-mobile(){
-                margin-left: unset;}}
         li{ 
             font-size: 20px;
             font-weight: 200;

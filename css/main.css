@@ -64,8 +64,9 @@
 
 .contenedor-logo {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   position: relative;
   top: 0;
   left: 0;
@@ -101,6 +102,8 @@
   color: #F7F7F8;
   list-style: none;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: right;
 }
 @media (max-width: 576px) {
@@ -130,8 +133,9 @@
 
 .contenedor-frase-titulo {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 576px) {
   .contenedor-frase-titulo {
@@ -142,8 +146,6 @@
   font-size: 80px;
   font-weight: 400;
   text-align: center;
-  font-family: "MONTSERRAT", sans-serif;
-  font-style: italic;
   margin-top: 150px;
   width: 100%;
   text-shadow: 0px 0px 20px black;
@@ -171,8 +173,8 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .contenido-inicio .subtitulo {
   font-size: 50px;
@@ -253,6 +255,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 900px;
 }
 @media (max-width: 576px) {
   .contenedor-principal-tu-lugar {
@@ -266,25 +269,29 @@
   width: 80%;
   text-align: center;
   color: #F7F7F8;
+  margin-bottom: 100px;
 }
 @media (max-width: 576px) {
   .contenedor-principal-tu-lugar h1 {
     font-size: 30px;
     width: 90%;
     margin-top: 100px;
+    margin-bottom: unset;
   }
 }
 .contenedor-principal-tu-lugar #descripcionRestaurant {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 @media (max-width: 576px) {
   .contenedor-principal-tu-lugar #descripcionRestaurant {
+    display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-top: 25px;
   }
 }
@@ -320,14 +327,16 @@
 .contenedor-principal-tu-lugar #espaciosRestaurant {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   justify-content: center;
   margin-left: 50px;
 }
 @media (max-width: 576px) {
   .contenedor-principal-tu-lugar #espaciosRestaurant {
+    display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-left: unset;
   }
 }
@@ -454,6 +463,8 @@
   height: 800px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 @media (max-width: 576px) {
   .contenedor-staff {
@@ -463,8 +474,8 @@
 .contenedor-staff .staff-titulos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .contenedor-staff .staff-titulos h1 {
   font-size: 50px;
@@ -494,8 +505,6 @@
   }
 }
 .contenedor-staff #seccionStaff {
-  display: flex;
-  justify-content: flex-start;
   margin-left: 80px;
   margin-top: 70px;
 }
@@ -519,20 +528,19 @@
 }
 
 .contenedor-ubicacion {
-  height: 800px;
+  height: 900px;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 100%;
   }
 }
 .contenedor-ubicacion .contenedor-titulo-ubicacion {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion .contenedor-titulo-ubicacion {
@@ -554,8 +562,8 @@
 .contenedor-ubicacion #ubicacionMures {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion #ubicacionMures {
@@ -565,8 +573,8 @@
 .contenedor-ubicacion #ubicacionMures .contenedor-direccion {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 10px;
   margin-top: 50px;
 }
@@ -607,6 +615,7 @@
 .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
   height: 400px;
   width: 600px;
+  margin-bottom: -6px;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion #ubicacionMures .contenedor-mapa iframe {
@@ -618,7 +627,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 50px;
 }
 @media (max-width: 576px) {
   .contenedor-ubicacion #nuevasUbicaciones {
@@ -639,17 +650,6 @@
     font-size: 16px;
   }
 }
-.contenedor-ubicacion #nuevasUbicaciones ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 20px;
-}
-@media (max-width: 576px) {
-  .contenedor-ubicacion #nuevasUbicaciones ul {
-    margin-left: unset;
-  }
-}
 .contenedor-ubicacion #nuevasUbicaciones li {
   font-size: 20px;
   font-weight: 200;
@@ -668,19 +668,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 576px) {
   .contenedor-reservas {
     height: unset;
-    justify-content: center;
   }
 }
 .contenedor-reservas h1 {
   font-size: 50px;
   text-shadow: 0px 0px 20px black;
   font-weight: 400;
-  margin-top: 50px;
   color: #F7F7F8;
+  margin-bottom: 100px;
 }
 @media (max-width: 576px) {
   .contenedor-reservas h1 {
@@ -693,10 +693,7 @@
   height: 520px;
   width: 400px;
   background-color: #211616;
-  display: flex;
-  justify-content: center;
   border: 1px solid #F7F7F8;
-  margin-top: 100px;
 }
 @media (max-width: 576px) {
   .contenedor-reservas #formularioReservas {
@@ -709,8 +706,8 @@
 .contenedor-reservas #formularioReservas form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .contenedor-reservas #formularioReservas .entradas-formulario {
   padding: 13px;
