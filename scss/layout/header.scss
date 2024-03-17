@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: 1px solid white;
     @include media-querie-mobile(){
         height: 812px;
         width: 100%;}}

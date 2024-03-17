@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
     .subtitulo{ 
-        font-size: $subtitulos-principales ;
+        font-size: $titulos-principales ;
         font-weight: 200;
         margin-top: 60px;
         text-shadow: 0px 0px 20px black;
@@ -80,14 +80,14 @@
 
 @keyframes animacionTitulo {
     0%{
-        color: #ffffff; }
+        color: #D0E3CC; }
     25%{
-        color: #FDB9FC; }
+        color: #F7FFDD; }
     50%{
-        color: #F806CC; }
+        color: #FCFDAF; }
     75%{
-        color: #6F61C0; }
+        color: #EFD780; }
     100%{
-        color: #FF204E; }
+        color: #DBA159; }
 }
 
