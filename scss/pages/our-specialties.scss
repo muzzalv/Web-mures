@@ -15,21 +15,12 @@
             font-size: 32px ;
             margin-top: 100px;}}
     #seccionMenu{ 
-         width: 1200px;
-         height: 400px;
-         background: linear-gradient(rgba(33, 35, 37, 0.8), rgba(33, 35, 37, 0.8)), url(../resources/fondo\ menu\ de\ cocina.jpg);
-         border: 1px solid $color-tipografias ;
-         background-position: center;
-         object-fit: cover;
-         background-position-y: -340px;
-         margin-top: 100px;
+        margin-top: 100px;
          @include media-querie-mobile(){
-            width: 300px;
-            height: fit-content;
-            margin-top: 40px;
+            margin-top: 50px;
             margin-bottom: 70px;
-            padding-top: 10px;}
-         ul{
+            padding: 10px;}
+        ul{
             list-style-type: none;
             display: grid;
             grid-template-columns: 400px 400px 400px ;
@@ -37,22 +28,30 @@
             @include media-querie-mobile(){
                 grid-template-columns: 296px;
                 grid-template-rows: repeat(9, auto);
-                padding: 0px;}} 
+                padding: 10px;}}       
         li{ 
             padding: 20px 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-right: 50px;
+            img{
+                width: 300px;
+                height: 100px;
+                position:absolute;
+                border: 1px solid white;
+                object-fit: cover;
+                opacity: 50%;}
             @include media-querie-mobile(){
-                margin-right: unset;}}   
+                margin-right: unset;
+                padding: 50px;}}   
         a{ 
             text-decoration: none;
             font-size: 25px;
-            font-weight: 200;
+            font-weight: 400;
             text-align: center;
-            text-shadow: 0px 0px 20px black;
-            color: $color-tipografias; 
+            color: $color-tipografias;
+            z-index: 10; 
             &:hover{ 
                 background-color:$color-tipografias;
                 color: black;

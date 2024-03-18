@@ -396,22 +396,13 @@
   }
 }
 .contenedor-cocina #seccionMenu {
-  width: 1200px;
-  height: 400px;
-  background: linear-gradient(rgba(33, 35, 37, 0.8), rgba(33, 35, 37, 0.8)), url(../resources/fondo\ menu\ de\ cocina.jpg);
-  border: 1px solid #F7F7F8;
-  background-position: center;
-  object-fit: cover;
-  background-position-y: -340px;
   margin-top: 100px;
 }
 @media (max-width: 576px) {
   .contenedor-cocina #seccionMenu {
-    width: 300px;
-    height: fit-content;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 70px;
-    padding-top: 10px;
+    padding: 10px;
   }
 }
 .contenedor-cocina #seccionMenu ul {
@@ -424,7 +415,7 @@
   .contenedor-cocina #seccionMenu ul {
     grid-template-columns: 296px;
     grid-template-rows: repeat(9, auto);
-    padding: 0px;
+    padding: 10px;
   }
 }
 .contenedor-cocina #seccionMenu li {
@@ -434,18 +425,27 @@
   align-items: center;
   margin-right: 50px;
 }
+.contenedor-cocina #seccionMenu li img {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid white;
+  object-fit: cover;
+  opacity: 50%;
+}
 @media (max-width: 576px) {
   .contenedor-cocina #seccionMenu li {
     margin-right: unset;
+    padding: 50px;
   }
 }
 .contenedor-cocina #seccionMenu a {
   text-decoration: none;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: center;
-  text-shadow: 0px 0px 20px black;
   color: #F7F7F8;
+  z-index: 10;
 }
 .contenedor-cocina #seccionMenu a:hover {
   background-color: #F7F7F8;
