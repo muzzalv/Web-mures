@@ -22,7 +22,6 @@
         @include media-querie-mobile(){
             height: fit-content;
             width: 340px;
-            margin-top: 50px;
             margin-bottom: 100px;}
         form{ 
             @include flexbox(column, center, center);}
